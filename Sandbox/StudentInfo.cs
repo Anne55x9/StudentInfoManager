@@ -59,8 +59,13 @@ namespace Sandbox
         // TIP: Use the method GetAllStudentId and a loop...
         public int GetTotalAverage()
         {
-            
-            return 0;
+            int AverageAll = 0;
+            foreach (KeyValuePair <int, Student> aA in students)
+            {
+                AverageAll = AverageAll + aA.Value.GetScoreAverage();
+            }
+
+            return AverageAll;
         }
 
         // Returns a list of all ids of the students in the group of students
