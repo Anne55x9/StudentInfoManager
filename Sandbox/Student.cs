@@ -30,7 +30,7 @@ namespace Sandbox
             return name;
         }
 
-        // Insert a single test result
+        // Insert a single test result, key and value;
         public void AddTestResult(String courseName, int score)
         {
             testScores.Add(courseName, score);
